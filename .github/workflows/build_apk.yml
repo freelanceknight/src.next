@@ -17,6 +17,8 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+    - name: webfactory/ssh-agent
+    uses: webfactory/ssh-agent@v0.8.0
       - name: Get branch name
         id: branch-name
         uses: tj-actions/branch-names@v4.8
