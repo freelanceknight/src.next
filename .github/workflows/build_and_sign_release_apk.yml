@@ -38,6 +38,8 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
+      - name: webfactory/ssh-agent
+        uses: webfactory/ssh-agent@v0.8.0
       - name: Initializing build
         run: echo Initializing build for platform ${{ matrix.platform }}
 
